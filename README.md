@@ -2,14 +2,16 @@
 
 This image provides 10up/wp-php-fpm-dev but with [Code Server](https://github.com/coder/code-server) added. Available as a Docker image with tags:
 
-* `5.6-ubuntu` (Deprecated, no longer refreshed)
-* `7.0-ubuntu`
-* `7.1-ubuntu`
-* `7.2-ubuntu`
-* `7.3-ubuntu`
-* `7.4-ubuntu`
-* `8.0-ubuntu`
-* `8.1-ubuntu`
+* Ubuntu 22.04 based (Docker Hub)
+  * `10up/wp-codeserver:5.6-ubuntu` (Deprecated, no longer refreshed)
+  * `10up/wp-codeserver:7.0-ubuntu`
+  * `10up/wp-codeserver:7.1-ubuntu`
+  * `10up/wp-codeserver:7.2-ubuntu`
+  * `10up/wp-codeserver:7.3-ubuntu`
+  * `10up/wp-codeserver:7.4-ubuntu`
+  * `10up/wp-codeserver:8.0-ubuntu`
+  * `10up/wp-codeserver:8.1-ubuntu`
+	* `10up/wp-codeserver:8.2-ubuntu`
 
 Supports linux/amd64 and linux/arm64
 

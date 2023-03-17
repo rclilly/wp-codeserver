@@ -1,7 +1,7 @@
-ARG PHP_VERSION=7.4
+ARG PHP_VERSION=8.2
 FROM 10up/wp-php-fpm-dev:${PHP_VERSION}-ubuntu
 
-ARG PHP_VERSION=7.4
+ARG PHP_VERSION=8.2
 
 
 USER root
@@ -25,22 +25,24 @@ RUN \
     mitzasql \
     ranger-fm
 
+RUN \
+  curl -fsSL https://code-server.dev/install.sh | sh; \
+  rm -rf ~/.cache
+
+RUN chsh -s /bin/bash www-data
+
 COPY code-server-entrypoint.sh /
 COPY bash.sh /
 RUN \
     chmod +x /code-server-entrypoint.sh && \
     chmod +x /bash.sh
 
-RUN \
-  curl -fsSL https://code-server.dev/install.sh | sh; \
-  rm -rf ~/.cache
-
-RUN chsh -s /bin/bash www-data
 USER www-data
 RUN \
   touch ~/.zshrc; \
   mkdir ~/.parallel; \
   touch ~/.parallel/will-cite
+
 WORKDIR /var/www/html
 
 SHELL ["/bin/bash", "-lc"]
