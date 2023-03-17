@@ -1,5 +1,7 @@
 ARG PHP_VERSION=8.2
-FROM 10up/wp-php-fpm-dev:${PHP_VERSION}-ubuntu
+
+ARG BASE_IMAGE=ghcr.io/10up/wp-php-fpm-dev
+FROM ${BASE_IMAGE}:${PHP_VERSION}-ubuntu
 
 ARG PHP_VERSION=8.2
 
