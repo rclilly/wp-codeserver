@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 
 if [ -d /code-server-entrypoint.d ]; then
   for I in $(ls /code-server-entrypoint.d)
