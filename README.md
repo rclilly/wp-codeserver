@@ -11,7 +11,8 @@ This image provides 10up/wp-php-fpm-dev but with [Code Server](https://github.co
   * `10up/wp-codeserver:7.4-ubuntu`
   * `10up/wp-codeserver:8.0-ubuntu`
   * `10up/wp-codeserver:8.1-ubuntu`
-	* `10up/wp-codeserver:8.2-ubuntu`
+  * `10up/wp-codeserver:8.2-ubuntu`
+  * `10up/wp-codeserver:8.3-ubuntu`
 
 Supports linux/amd64 and linux/arm64
 

@@ -47,5 +47,5 @@ RUN \
 
 WORKDIR /var/www/html
 
-SHELL ["/bin/bash", "-lc"]
+SHELL ["/bin/bash"]
 ENTRYPOINT ["/code-server-entrypoint.sh"]
